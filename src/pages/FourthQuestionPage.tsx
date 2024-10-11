@@ -1,12 +1,9 @@
 import React from "react";
-import questions from "../data/questions.json";
 import { Link } from "react-router-dom";
+import questions from "../data/questions.json";
 
-const FirstQuestionPage = () => {
-  const data = questions[0];
-
-
-  
+const FourthQuestionPage = () => {
+  const data = questions[3];
 
   return (
     <div className="flex items-center justify-center w-full h-screen">
@@ -14,7 +11,7 @@ const FirstQuestionPage = () => {
         <h1 className="text-[#1C2635] font-garamond font-medium text-3xl text-center max-w-[300px]">
           {data.question}
         </h1>
-        <div className="grid grid-cols-4 gap-x-2">
+        <div className="grid grid-cols-5 gap-x-2">
           {data.answers.map((item: any) => (
             <div
               key={item.key}
@@ -28,7 +25,7 @@ const FirstQuestionPage = () => {
         </div>
         <div className="flex gap-6 font-sans items-center">
           <Link
-            to="/"
+            to="/question/3"
             className="border-b border-solid mb-1 border-[#677487] text-[#677487] transition-all hover:border-transparent"
           >
             Back
@@ -66,4 +63,4 @@ const FirstQuestionPage = () => {
   );
 };
 
-export default FirstQuestionPage;
+export default FourthQuestionPage;

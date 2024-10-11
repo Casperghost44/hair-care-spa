@@ -24,30 +24,34 @@
     "key": 3,
     "question": "What benefit do you look for in your hair products?",
     "answers": [
-      { "key": "a", "answer": "Straight" },
-      { "key": "b", "answer": "Curly" },
-      { "key": "c", "answer": "Wavy" },
-      { "key": "d", "answer": "Fine" }
+      { "key": "a", "answer": "Anti-breakage" },
+      { "key": "b", "answer": "Hydration" },
+      { "key": "c", "answer": "Soothing dry scalp" },
+      { "key": "d", "answer": "Repairs the appearance of damaged hair" },
+      { "key": "e", "answer": "Volume" },
+      { "key": "f", "answer": "Curl and coil enhancing." }
     ]
   },
   {
     "key": 4,
     "question": "Is there anything troubling you about your hair?",
     "answers": [
-      { "key": "a", "answer": "Straight" },
-      { "key": "b", "answer": "Curly" },
-      { "key": "c", "answer": "Wavy" },
-      { "key": "d", "answer": "Fine" }
+      { "key": "a", "answer": "Breakage" },
+      { "key": "b", "answer": "Frizz" },
+      { "key": "c", "answer": "Scalp dryness" },
+      { "key": "d", "answer": "Damage" },
+      { "key": "e", "answer": "Tangling" }
     ]
   },
   {
     "key": 5,
     "question": "What is your natural hair color(s) today?",
     "answers": [
-      { "key": "a", "answer": "Straight" },
-      { "key": "b", "answer": "Curly" },
-      { "key": "c", "answer": "Wavy" },
-      { "key": "d", "answer": "Fine" }
+      { "key": "a", "answer": "Black" },
+      { "key": "b", "answer": "Brown" },
+      { "key": "c", "answer": "Blonde" },
+      { "key": "d", "answer": "Red/Orange" },
+      { "key": "e", "answer": "Silver/Grey"}
     ]
   }
 ]

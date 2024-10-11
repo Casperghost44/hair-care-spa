@@ -1,12 +1,9 @@
 import React from "react";
-import questions from "../data/questions.json";
 import { Link } from "react-router-dom";
+import questions from "../data/questions.json";
 
-const FirstQuestionPage = () => {
-  const data = questions[0];
-
-
-  
+const ThirdQuestionPage = () => {
+  const data = questions[2];
 
   return (
     <div className="flex items-center justify-center w-full h-screen">
@@ -14,11 +11,14 @@ const FirstQuestionPage = () => {
         <h1 className="text-[#1C2635] font-garamond font-medium text-3xl text-center max-w-[300px]">
           {data.question}
         </h1>
-        <div className="grid grid-cols-4 gap-x-2">
-          {data.answers.map((item: any) => (
+        <div className="grid grid-cols-4 gap-2">
+          {data.answers.map((item: any, index: number) => (
             <div
               key={item.key}
-              className="border border-solid text-[#1C2635] border-[#5BC1ED] rounded-lg pr-10 pl-3 py-3 transition-all hover:bg-[#5BC1ED] hover:text-white hover:cursor-pointer"
+              className={
+                "border border-solid text-[#1C2635] border-[#5BC1ED] rounded-lg pr-10 pl-3 py-3 transition-all hover:bg-[#5BC1ED] hover:text-white hover:cursor-pointer " +
+                (index === 4 && "col-start-2")
+              }
             >
               <span className="font-garamond text-inherit">
                 {item.key}. {item.answer}
@@ -28,7 +28,7 @@ const FirstQuestionPage = () => {
         </div>
         <div className="flex gap-6 font-sans items-center">
           <Link
-            to="/"
+            to="/question/2"
             className="border-b border-solid mb-1 border-[#677487] text-[#677487] transition-all hover:border-transparent"
           >
             Back
@@ -66,4 +66,4 @@ const FirstQuestionPage = () => {
   );
 };
 
-export default FirstQuestionPage;
+export default ThirdQuestionPage;
